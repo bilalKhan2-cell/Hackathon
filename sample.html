@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyDEhddrhBpLwITHrIrfrWdA2VVckj188c0",
+          authDomain: "simpledb-c0805.firebaseapp.com",
+          databaseURL: "https://simpledb-c0805-default-rtdb.firebaseio.com",
+          projectId: "simpledb-c0805",
+          storageBucket: "simpledb-c0805.appspot.com",
+          messagingSenderId: "209438495760",
+          appId: "1:209438495760:web:189bff7e24652d72eb2695",
+          measurementId: "G-7GN94GNZQC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+
+    <input type="text"  id="txt">
+    <input type="password" id="password">
+    <input type="number" id="age">
+    <input type="text" id="address">
+
+    <button onclick="show()">Submit Data</button>
+
+    <script src="scrpt.js"></script>
+</body>
+</html>
